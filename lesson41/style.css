@@ -1,0 +1,70 @@
+form {
+    width: 300px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    padding-right: 50px;
+
+    font-family: sans-serif;
+
+    user-select: none;
+}
+
+fieldset {
+    border: none;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    border-width: 1px;
+    outline: none;
+
+    padding: 5px;
+    cursor: default;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+/* Это подсмотрел */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    
+}
+
+textarea {
+    resize: vertical;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+#check {
+    width: max-content;
+}
+
+.checkbox-area label {
+    display: inline-block;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+
