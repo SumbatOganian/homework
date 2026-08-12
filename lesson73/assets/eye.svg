@@ -1,0 +1,5 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Show password</title>
+  <path d="M2.5 12C4.35 8.5 7.63 6.25 12 6.25C16.37 6.25 19.65 8.5 21.5 12C19.65 15.5 16.37 17.75 12 17.75C7.63 17.75 4.35 15.5 2.5 12Z" stroke="#6B7280" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="12" cy="12" r="2.75" stroke="#6B7280" stroke-width="1.75"/>
+</svg>

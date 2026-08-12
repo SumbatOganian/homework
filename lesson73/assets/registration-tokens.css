@@ -1,0 +1,53 @@
+:root {
+  /* Page and card */
+  --page-background: #F7F5F4;
+  --card-background: #FDFDFC;
+
+  /* Left visual panel */
+  --visual-background-start: #16163D;
+  --visual-background-end: #211D53;
+
+  /* Primary action */
+  --primary-button: #2C258E;
+  --primary-button-hover: #241D7D;
+  --primary-button-text: #FFFFFF;
+
+  /* Form controls */
+  --input-background: #FFFFFF;
+  --input-outline: #D0D0D3;
+  --input-outline-hover: #A9A9B0;
+  --input-outline-focus: #7F6ADE;
+  --input-focus-ring: rgba(127, 106, 222, 0.20);
+}
+
+.registration-page {
+  background: var(--page-background);
+}
+
+.registration-visual {
+  background: linear-gradient(
+    180deg,
+    var(--visual-background-start) 0%,
+    var(--visual-background-end) 100%
+  );
+}
+
+.registration-input {
+  background: var(--input-background);
+  border: 1px solid var(--input-outline);
+  outline: none;
+}
+
+.registration-input:focus {
+  border-color: var(--input-outline-focus);
+  box-shadow: 0 0 0 4px var(--input-focus-ring);
+}
+
+.registration-submit {
+  color: var(--primary-button-text);
+  background: var(--primary-button);
+}
+
+.registration-submit:hover {
+  background: var(--primary-button-hover);
+}

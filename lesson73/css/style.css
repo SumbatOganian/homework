@@ -1,0 +1,272 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Inter", sans-serif;
+	user-select: none;
+}
+
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--page-background: #f7f5f4;
+	--card-background: #fdfdfc;
+
+	--button-background: #2c258e;
+	--button-hover: #241d7d;
+
+	--input-outline: #d0d0d3;
+	--input-outline-hover: #a9a9b0;
+	--input-outline-focus: #7f6ade;
+	--input-focus-ring: #7f6ade33; /* прозрачность 20% */
+}
+
+body {
+	background: var(--page-background);
+	min-height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.registration-card {
+	display: flex;
+	flex-wrap: wrap;
+
+	width: 80%;
+
+	border-radius: 20px;
+	overflow: hidden;
+
+	box-shadow: 5px 5px 40px #0000002b;
+}
+
+.logo-side {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+
+	padding: 40px 40px 40px 40px;
+
+	width: 40%;
+	min-height: 100%;
+	background: url("../assets/registration-left-bg.png") center no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.logo-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo-name {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.logo {
+	width: 40px;
+}
+
+.texts h2 {
+	font-size: 35px;
+	margin-bottom: 20px;
+	line-height: 1.2;
+}
+
+.texts p {
+	font-size: 18px;
+	opacity: 0.8;
+	line-height: 2;
+}
+
+.registration-form {
+	background: var(--card-background);
+	padding: 70px 70px 30px 70px;
+	width: 60%;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+}
+
+.form-group-title {
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.form-enter-group p {
+	opacity: 0.7;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+.form-enter-group button {
+	display: block;
+	background: var(--card-background);
+	border: 1px solid var(--input-outline);
+	border-radius: 5px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 500;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.form-enter-group button:hover,
+.form-button:hover {
+	transform: scale(1.05);
+}
+
+.form-enter-group .google-form {
+	margin-bottom: 10px;
+}
+
+.form-enter-group .apple-form {
+	margin-bottom: 20px;
+}
+
+.form-enter-group .google-form::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url("../assets/google.png") no-repeat center;
+	background-size: cover;
+	position: absolute;
+	left: 100px;
+}
+
+.form-enter-group .apple-form::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url("../assets/apple.png") no-repeat center;
+	background-size: cover;
+	position: absolute;
+	left: 100px;
+}
+
+.or {
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-group input {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	border: 1px solid var(--input-outline);
+	border-radius: 5px;
+}
+
+#password {
+	margin: 0;
+}
+
+.form-group input:focus-visible {
+	outline: 1px solid var(--input-outline-focus);
+}
+
+.wrapper-for-toggle {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.eye-button {
+	background: url("../assets/eye.png") no-repeat center;
+	background-size: cover;
+	width: 25px;
+	height: 25px;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 16px;
+}
+
+.checkbox-wrapper {
+	position: relative;
+}
+
+#check {
+	appearance: none;
+	position: absolute;
+	outline: none;
+}
+
+#check::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url("../assets/checkbox-unchecked.png") no-repeat center;
+	background-size: cover;
+	position: absolute;
+	cursor: pointer;
+	margin-left: -2px;
+}
+
+#check:checked::before {
+	background: url("../assets/checkbox-checked.png") center no-repeat;
+	background-size: cover;
+}
+
+.checkbox-label {
+	display: block;
+	margin-left: 30px;
+	margin-bottom: 15px;
+}
+
+.check-text-mod {
+	font-size: 15px;
+	color: var(--input-outline-focus);
+}
+
+.form-button {
+	display: block;
+	padding: 10px;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 8px;
+	color: #fff;
+	background: var(--button-background);
+	border: none;
+	cursor: pointer;
+	transition: all 0.5s;
+	margin-bottom: 15px;
+}
+
+.has-account {
+	text-align: center;
+}
+
+.has-account span {
+	font-size: 15px;
+	opacity: 0.7;
+}
+
+.has-account a {
+	text-decoration: none;
+	color: var(--input-outline-focus);
+}
