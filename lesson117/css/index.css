@@ -5,6 +5,6 @@
 @import '../css/base/globals.css';
 
 /* blocks */
-@import '/css/blocks/header.css';
-@import '/css/blocks/menu.css';
-@import '/css/blocks/burger.css';;
+@import url("./blocks/header.css");
+@import url("./blocks/menu.css");
+@import url("./blocks/burger.css");
